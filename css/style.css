@@ -1,0 +1,201 @@
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1 {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.nav-content a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.main-btn {
+  text-decoration: none;
+  background: #0075ff;
+  color: #ffffff;
+  border-radius: 48px;
+  padding: 12px 35px;
+  text-transform: uppercase;
+}
+
+.fa-solid,
+.fas {
+  margin: 0 5px;
+}
+
+header {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.page-main-image {
+  padding-right: 39px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.main-text {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 167px 255px 306px 208px;
+}
+
+.nav-content a:not(:last-child) {
+  margin-right: 39px;
+}
+
+.nav-play-btn {
+  background: none;
+  border: 2px solid #ffffff;
+  padding: 8px 38px;
+}
+
+.nav-started-btn {
+  margin: 0 25px 48px;
+}
+
+header .container h1 {
+  margin-bottom: 30px;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 15.62%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  z-index: -1;
+}
+
+/*/ //////////////////////////////*/
+/*/ //////////////////////////////*/
+/*FOOTER*/
+/*///////////////////////////////*/
+/*/ //////////////////////////////*/
+
+footer {
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90%;
+  background: #08131b;
+  z-index: -2;
+}
+
+h6 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.footer-content {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 67px 0 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-contact p {
+  color: #a3c6d1;
+}
+
+.footer-social-media a,
+.footer-contact p a {
+  color: #61b5e5;
+  font-size: 23px;
+}
+
+.footer-contact p {
+  font-weight: 400;
+}
+
+.footer-social-media a {
+  margin-right: 90px;
+  font-size: 20px;
+}
+
+.footer-links {
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 15px;
+}
+
+.contact-us {
+  padding-left: 0;
+  display: grid;
+  row-gap: 15px;
+}
+
+.maya {
+  margin: 6px 0 21px 0;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-brands,
+.fab {
+  font-weight: 400;
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.open-day {
+  display: flex;
+}
+
+.open-day .day {
+  width: 50%;
+}
+
+.open-day .time {
+  width: 100%;
+}
