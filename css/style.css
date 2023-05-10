@@ -59,7 +59,6 @@ header {
 }
 
 .page-main-image {
-  padding-right: 39px;
   position: absolute;
   top: 0;
   left: 0;
@@ -157,7 +156,7 @@ h6 {
 }
 
 .footer-social-media a {
-  margin-right: 90px;
+  margin-right: 80px;
   font-size: 20px;
 }
 
