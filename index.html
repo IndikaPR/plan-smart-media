@@ -29,9 +29,9 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="position-relative">
+    <header>
       <div class="container">
-        <nav class="navigation">
+        <div class="section-header">
           <div class="nav-img">
             <img
               src="img/logo.png"
@@ -39,43 +39,47 @@
               style="height: 153px; width: 227px"
             />
           </div>
-          <div class="nav-content">
+          <nav class="navigation"> 
             <a href="#">home</a>
             <a href="#">about</a>
             <a href="#">our work</a>
             <a href="#">gallery</a>
-            <a href="#">
-              services <i class="fa-solid fa-circle-chevron-down"></i>
-            </a>
+            <a href="#">services <i class="fa-solid fa-chevron-down"></i> </a>
             <a href="#">contact</a>
             <a href="#">blog</a>
-          </div>
+          </nav>
           <div class="nav-btn">
-            <a href="#" class="main-btn nav-started-btn"
-              >get a project started</a
-            >
-            <a href="#" class="main-btn nav-play-btn">play online</a>
+            <a href="#" class="main-btn nav-started-btn"> get a project started </a>
+            <a href="#" class="main-btn nav-play-btn">pay online</a>
           </div>
-        </nav>
-        <div class="main-text text-align">
-          <h2 class="h2 header-secondary-heading">plan smart media</h2>
-          <h1 class="h1">professional image retouching</h1>
-          <a href="#" class="main-btn">get a project started</a>
         </div>
       </div>
-      <img
-        src="img/main-img-1.jfif"
-        alt="page-main-image"
-        class="page-main-image"
-      />
     </header>
 
     <main>
+      <section class="section-plan-smart">
+        <div class="page-main-image">
+          <img
+            src="img/main-img-1.jfif"
+            alt="page-main-image"
+            class="main-image"
+          />
+        </div>
+        <div class="container">
+          <div class="main-text">
+            <h2 class="h2 header-secondary-heading">plan smart media</h2>
+            <h1 class="h1 header-primary-heading">professional image retouching</h1>
+            <a href="#" class="main-btn">get a project started</a>
+          </div>
+        </div>
+      </section>
+
+
       <section class="section-welcome">
         <div class="container">
           <div class="row">
             <div class="col-lg-3">
-              <div class="position-relative welcome-img-primary">
+              <div class="welcome-img-primary">
                 <img
                   src="img/welcome-1.jfif"
                   alt="welcome-img"
@@ -85,10 +89,10 @@
                   <i class="fa-solid fa-shield-halved shield-icon"></i>
                   <p>TRANSFORM YOUR PHOTOS INTO MASTERPIECES</p>
                 </div>
-              </div>
+              </div> 
             </div>
             <div class="col-lg-3">
-              <div class="position-relative welcome-img-secondary">
+              <div class="welcome-img-secondary">
                 <img
                   src="img/welcome-2.png"
                   alt="welcome-img"
@@ -131,20 +135,30 @@
           <div class="service-grid-container">
             <div class="position-relative service-grid"> 
               <img src="img/service-1.jfif" alt="service" class="service-img">
-              <div class="img-caption text-align">
-                <h2 class="h2">IMAGE RETOUCHING</h2>
-                <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+              <div class="service-content">
+                <div class="img-caption text-align">
+                  <h2 class="h2">IMAGE RETOUCHING</h2>
+                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                </div>
               </div>
             </div>
             <div class="position-relative service-grid"> 
               <img src="img/service-2.jfif" alt="service" class="service-img">
-              <div class="img-caption text-align">
-                <h2 class="h2">IMAGE CLIPPING</h2>
-                <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+              <div class="service-content">
+                <div class="img-caption text-align">
+                  <h2 class="h2">IMAGE CLIPPING</h2>
+                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                </div>
               </div>
             </div>
             <div class="position-relative service-grid"> 
               <img src="img/service-3.jfif" alt="service" class="service-img">
+              <div class="service-content">
+                <div class="img-caption text-align">
+                  <h2 class="h2">IMAGE CLIPPING</h2>
+                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                </div>
+              </div>
               <div class="img-caption text-align">
                 <h2 class="h2">FLOOR PLANS</h2>
                 <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
@@ -152,23 +166,29 @@
             </div>
             <div class="position-relative service-grid"> 
               <img src="img/service-4.jfif" alt="service" class="service-img">
-              <div class="img-caption text-align">
-                <h2 class="h2">IMAGE REMOVE</h2>
-                <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+              <div class="service-content">
+                <div class="img-caption text-align">
+                  <h2 class="h2">IMAGE REMOVE</h2>
+                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                </div>
               </div>
             </div>
             <div class="position-relative service-grid"> 
               <img src="img/service-5.jfif" alt="service" class="service-img">
-              <div class="img-caption text-align">
-                <h2 class="h2">VIRTUAL TOUR</h2>
-                <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+              <div class="service-content">
+                <div class="img-caption text-align">
+                  <h2 class="h2">VIRTUAL TOUR</h2>
+                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                </div>
               </div>
             </div>
             <div class="position-relative service-grid"> 
               <img src="img/service-6.jfif" alt="service" class="service-img">
-              <div class="img-caption text-align">
-                <h2 class="h2">VIDEO EDITING</h2>
-                <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+              <div class="service-content">
+                <div class="img-caption text-align">
+                  <h2 class="h2">VIDEO EDITING</h2>
+                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                </div>
               </div>
             </div>
             </div>
@@ -256,7 +276,7 @@
                       placeholder="Message"
                     ></textarea>
                   </div>
-                  <a href="#" class="text-align form-btn">Talk to us</a>
+                  <button class=" form-btn"><a href="#" class="text-align">Talk to us</a></button>
                 </form>
               </div>
             </div>
@@ -268,8 +288,8 @@
         <div class="container">
           <h6 class="h6 text-align our-strength-secondary">WHAT OUR CLIENTS SAY</h6>
           <h2 class="h2 text-align">OUR STRENGTH IS OUR CLIENTS</h2>
-          <div class="row">
-            <div class="col-lg-4">
+          <div class="row hero-card-row">
+            <div class="col-lg-4 col-md-6">
               <div class="hero-card-1">
                 <div class="hero-card-start text-align">
                   <i class="fa-sharp fa-solid fa-star"></i>
