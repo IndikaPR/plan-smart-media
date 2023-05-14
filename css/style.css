@@ -13,9 +13,6 @@ body {
   font-size: 14px;
   color: #000000;
 }
-.container {
-  max-width: 1400px;
-}
 
 a {
   text-decoration: none;
@@ -75,11 +72,16 @@ header {
   justify-content: space-between;
 }
 
+.nav-img img {
+  height: 153px;
+  width: 227px;
+}
+
 .nav-started-btn {
   margin-right: 25px;
 }
 
-.nav-play-btn {
+.nav-pay-btn {
   background: none;
   border: 3px solid #ffffff;
   padding: 8px 35px;
@@ -93,33 +95,73 @@ header {
   margin-right: 39px;
 }
 
+.icon-down {
+  margin-left: 10px;
+}
+
 /*/ //////////////////////////////*/
 /*/ //////////////////////////////*/
 /*SECTION-PLAN-SMART*/
 /*///////////////////////////////*/
 /*/ //////////////////////////////*/
 
+.section-plan-smart {
+  color: #ffffff;
+  position: relative; /* ensure the child elements are positioned relative to this container */
+  height: 100vh; /* set the height of the section to the viewport height */
+  display: flex; /* enable flexbox layout */
+  flex-direction: column; /* stack child elements vertically */
+  justify-content: center; /* vertically center the child elements */
+  align-items: center; /* horizontally center the child elements */
+}
+
+.page-main-image {
+  position: absolute; /* position the image absolutely */
+  top: 0; /* position it at the top of the section */
+  left: 0; /* position it at the left of the section */
+  width: 100%; /* set the width to 100% to fill the section */
+  height: 100%; /* set the height to 100% to fill the section */
+  z-index: -1; /* set a negative z-index to move the image behind the main text */
+}
+
+.main-text {
+  text-align: center; /* center the text horizontally */
+}
+
+/*.page-main-image {
+  width: 100%;
+  height: 100%;  remove the height property to maintain the aspect ratio 
+margin-bottom: 20px; /* add some space between the image and the text 
+}
+*/
+
 .main-image {
   width: 100%;
   height: 100%;
 }
 
-.section-plan-smart {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.main-text {
+.page-main-image::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 15.62%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  z-index: 1;
+}
+
+.main-text a {
+  margin-top: 12px;
+}
+
+.header-primary-heading {
+  margin-bottom: 30px;
 }
 
 /*/ //////////////////////////////*/
@@ -158,6 +200,7 @@ header {
   height: 100%;
   object-fit: cover;
   margin-bottom: 5px;
+  padding-top: 36px;
 }
 
 .welcome-content {
@@ -165,6 +208,10 @@ header {
   padding: 30px 14px 29px 19px;
   display: flex;
   align-items: center;
+}
+
+.set-padding {
+  padding-bottom: 53px;
 }
 
 .welcome-content p {
@@ -224,6 +271,7 @@ header {
 }
 
 .service-grid-container {
+  color: #ffffff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 24px;
@@ -258,6 +306,24 @@ header {
 .img-caption {
   background: #00000080;
   padding: 8px 22px 10px;
+}
+
+.service-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.service-hover:hover + .service-content .img-caption {
+  background: #000000;
+  -webkit-transition: all 1000ms ease;
+  -moz-transition: all 1000ms ease;
+  -ms-transition: all 1000ms ease;
+  -o-transition: all 1000ms ease;
+  transition: all 1000ms ease;
 }
 
 /*/ //////////////////////////////*/
@@ -494,14 +560,8 @@ footer {
   margin-top: 62px;
 }
 
-footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 90%;
+.footer-top {
   background: #08131b;
-  z-index: -2;
 }
 
 .footer-content {
@@ -575,21 +635,47 @@ footer::before {
   width: 100%;
 }
 
-@media all and (max-width: 1320px) {
+/*/ //////////////////////////////*/
+/*/ //////////////////////////////*/
+/*MEDIA QUERIES*/
+/*///////////////////////////////*/
+/*/ //////////////////////////////*/
+@media screen and (max-width: 1320px) {
+  .nav-img img {
+    height: 100px;
+    width: 180px;
+  }
+
+  .nav-started-btn {
+    margin-right: 10px;
+  }
+
+  .navigation a:not(:last-child) {
+    margin-right: 29px;
+  }
+
+  .nav-started-btn,
+  .nav-play-btn {
+    padding: 10px 20px;
+  }
+
+  .nav-pay-btn {
+    padding: 6px 20px;
+  }
+
   .header-primary-heading {
     font-size: 48px;
   }
 
-  .navigation {
-    flex-direction: column;
+  .section-header {
+    display: inline-flex;
+    gap: 10px;
   }
+}
 
-  .navigation div:nth-child(3) {
-    order: 2;
-  }
-
-  .nav-btn {
-    margin-top: 50px;
+@media all and (max-width: 1200px) {
+  .nav-started-btn {
+    display: none;
   }
 }
 
