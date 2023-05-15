@@ -482,6 +482,7 @@ textarea {
   width: 100%;
   padding: 10px 5px;
   font-size: 14px;
+  color: #ffffff;
 }
 
 input {
@@ -735,6 +736,10 @@ footer {
     justify-content: space-around;
   }
 
+  .grid-img {
+    padding-top: 150%;
+  }
+
   .footer-content {
     text-align: center;
   }
@@ -851,31 +856,9 @@ footer {
     padding: 72px 0px 88px;
   }
 
-  /* .footer-social-media a {
-    margin-right: 0;
-  }
-
-  .footer-social-media a .facebook {
-    margin-right: 30px;
-  }
-
-  .footer-social-media a {
-    margin-left: 10px;
-  } */
-
   .service-grid-container {
     padding: 0 10px;
   }
-
-  /* .open-day {
-    display: block;
-  }
-
-  .open-day .day {
-    display: block;
-    width: 100%;
-  } */
-
   .maya {
     display: block;
     text-align: center;
