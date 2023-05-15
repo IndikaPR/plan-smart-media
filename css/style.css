@@ -713,6 +713,10 @@ footer {
     width: 170px;
   }
 
+  .footer-content {
+    column-gap: 10px;
+  }
+
   .section-get-started {
     padding: 72px 120px 88px;
   }
