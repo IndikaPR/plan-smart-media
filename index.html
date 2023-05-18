@@ -24,6 +24,11 @@
       referrerpolicy="no-referrer"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/test.css" /> -->
     <title>Document</title>
@@ -62,11 +67,25 @@
     <main>
       <section class="section-plan-smart">
         <div class="page-main-image">
-          <img
-            src="img/main-img-1.jfif"
-            alt="page-main-image"
-            class="main-image"
-          />
+          <div class="swiper">
+            <div class="swiper-wrapper" >
+              <div class="swiper-slide"><img
+                src="img/main-img-1.jfif"
+                alt="page-main-image"
+                class="main-image"
+              /></div>
+              <div class="swiper-slide"><img
+                src="img/main-img-2.jpg"
+                alt="page-main-image"
+                class="main-image"
+              /> </div>
+              <div class="swiper-slide"><img
+                src="img/main-img-3.jpg"
+                alt="page-main-image"
+                class="main-image"
+              /> </div>
+            </div>
+          </div>
         </div>
         <div class="container">
           <div class="main-text">
@@ -76,8 +95,7 @@
             <div class="nav-btn-2">
               <a href="#" class="main-btn nav-pay-btn">pay online</a>
             </div>
-          </div>
-          
+          </div>  
         </div>
         
       </section>
@@ -146,7 +164,7 @@
               <div class="service-content">
                 <div class="img-caption text-align">
                   <h2 class="h2">IMAGE RETOUCHING</h2>
-                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-circle-right"></i></a></h6>
                 </div>
               </div>
             </div>
@@ -156,7 +174,7 @@
               <div class="service-content">
                 <div class="img-caption text-align">
                   <h2 class="h2">IMAGE CLIPPING</h2>
-                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-circle-right"></i></a></h6>
                 </div>
               </div>
             </div>
@@ -166,10 +184,9 @@
               <div class="service-content">
                 <div class="img-caption text-align">
                   <h2 class="h2">FLOOR PLANS</h2>
-                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-circle-right"></i></a></h6>
                 </div>
               </div>
-              
             </div>
             <div class="position-relative service-grid"> 
               <img src="img/service-4.jfif" alt="service" class="service-img">
@@ -177,7 +194,7 @@
               <div class="service-content">
                 <div class="img-caption text-align">
                   <h2 class="h2">IMAGE REMOVE</h2>
-                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-circle-right"></i></a></h6>
                 </div>
               </div>
             </div>
@@ -187,7 +204,7 @@
               <div class="service-content">
                 <div class="img-caption text-align">
                   <h2 class="h2">VIRTUAL TOUR</h2>
-                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-circle-right"></i></a></h6>
                 </div>
               </div>
             </div>
@@ -197,7 +214,7 @@
               <div class="service-content">
                 <div class="img-caption text-align">
                   <h2 class="h2">VIDEO EDITING</h2>
-                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-arrow-right"></i></a></h6>
+                  <h6 class="h6">GET STARTED <a href="#"><i class="fa-solid fa-circle-right"></i></a></h6>
                 </div>
               </div>
             </div>
@@ -253,13 +270,13 @@
       </section>
 
       <section class="section-get-started">
-        <img src="img/get-started-1.png" alt="get-started" class="get-started-img">
+        <img src="img/get-started-1.jpg" alt="get-started" class="get-started-img">
         <div class="container">
           <div class="row">
             <div class="col-lg-6">
               <div class="get-started-content text-align">
                 <h6 class="h6 get-started-secondary">GET STARTED</h6>
-                <h2 class="h2">ARE YOUR READY TO <br> TRANSFORM YOUR IMAGES</h2>
+                <h2 class="h2 get-primary-secondary">ARE YOUR READY TO <br> TRANSFORM YOUR IMAGES</h2>
                 <p class="get-started-paragraph">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor incididunt <br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor incididunt</p>
               </div>
             </div>
@@ -286,7 +303,7 @@
                       placeholder="Message"
                     ></textarea>
                   </div>
-                  <button class=" form-btn"><a href="#" class="text-align">Talk to us</a></button>
+                  <button class="form-btn">Talk to us</button>
                 </form>
               </div>
             </div>
@@ -369,7 +386,6 @@
                 <img
                   src="img/logo.png"
                   alt="plan-smart-media"
-                  style="height: 153px; width: 228px"
                 />
                 <p>
                   SCHEDULE YOUR APPOINTMENT <br />
@@ -462,5 +478,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

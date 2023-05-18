@@ -1,3 +1,9 @@
+.swiper {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
 /*COMMON STYLES*/
 /*////////////*/
 
@@ -34,11 +40,13 @@ ul li {
 }
 
 .h2 {
+  font-weight: 500;
   font-size: 32px;
   text-transform: uppercase;
 }
 
 .h6 {
+  font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -58,6 +66,7 @@ ul li {
   border-radius: 48px;
   padding: 12px 35px;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 /*/ //////////////////*/
@@ -71,13 +80,14 @@ header {
 }
 
 .section-header {
+  padding-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .nav-img img {
-  height: 153px;
+  /* height: 153px; */
   width: 227px;
 }
 
@@ -140,13 +150,6 @@ header {
   display: none;
 }
 
-/*.page-main-image {
-  width: 100%;
-  height: 100%;  remove the height property to maintain the aspect ratio 
-margin-bottom: 20px; /* add some space between the image and the text 
-}
-*/
-
 .main-image {
   width: 100%;
   height: 100%;
@@ -170,11 +173,7 @@ margin-bottom: 20px; /* add some space between the image and the text
 }
 
 .main-text a {
-  margin-top: 12px;
-}
-
-.header-primary-heading {
-  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 /*/ //////////////////////////////*/
@@ -228,8 +227,10 @@ margin-bottom: 20px; /* add some space between the image and the text
 }
 
 .welcome-content p {
+  font-weight: 600;
   margin-bottom: 0;
   font-size: 20px;
+  color: #ffffff;
 }
 
 .section-welcome-content {
@@ -242,18 +243,22 @@ margin-bottom: 20px; /* add some space between the image and the text
 }
 .welcome-primary-heading {
   margin-bottom: 8px;
+  line-height: 48px;
 }
 .welcome-paragraph {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  line-height: 24px;
 }
 
 .read-more {
+  display: inline-block;
   padding: 12px 43px;
 }
 
 .shield-icon {
+  color: #ffffff;
   margin-right: 20px;
   font-size: 35px;
 }
@@ -271,6 +276,7 @@ margin-bottom: 20px; /* add some space between the image and the text
 
 .service-primary-heading {
   margin-bottom: 48px;
+  line-height: 48px;
 }
 
 .service-background {
@@ -302,7 +308,7 @@ margin-bottom: 20px; /* add some space between the image and the text
 }
 
 .service-grid {
-  padding-top: 110%;
+  padding-top: 120%;
 }
 
 .service-content {
@@ -314,11 +320,13 @@ margin-bottom: 20px; /* add some space between the image and the text
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 47px;
 }
 
 .img-caption {
   background: #00000080;
   padding: 8px 22px 10px;
+  width: 100%;
 }
 
 .service-hover {
@@ -373,13 +381,14 @@ margin-bottom: 20px; /* add some space between the image and the text
   background: linear-gradient(
     90.13deg,
     #000000 25.65%,
-    rgba(0, 0, 0, 0) 54.63%
+    rgba(0, 0, 0, 0) 80.63%
   );
   z-index: -1;
 }
 
 .why-choose-secondary {
   padding-top: 137px;
+  font-weight: 500;
 }
 
 .meet-me {
@@ -388,14 +397,23 @@ margin-bottom: 20px; /* add some space between the image and the text
 
 .why-choose-primary {
   margin-bottom: 10px;
+  line-height: 48px;
+  font-weight: 600;
+  font-size: 32px;
 }
 
 .why-choose-paragraph {
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 30px;
+  line-height: 25px;
+  font-size: 15px;
 }
 
 .why-choose-btn {
+  display: inline-block;
   padding: 12px 27px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /*/ //////////////////////////////*/
@@ -408,11 +426,13 @@ margin-bottom: 20px; /* add some space between the image and the text
 }
 
 .gallery-primary-heading {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .gallery-btn {
   padding: 12px 59px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .grid {
@@ -450,7 +470,7 @@ margin-bottom: 20px; /* add some space between the image and the text
   margin-top: 104px;
   color: #ffffff;
   padding: 72px 166px 88px 120px;
-  background: rgba(0, 0, 0, 0.61);
+  background: rgba(24, 19, 35, 0.81);
   position: relative;
   height: 100%;
   width: 100%;
@@ -502,11 +522,11 @@ textarea::placeholder {
   background: #ffffff;
   padding: 19px 117px;
   color: #08072f;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 15px;
   border-radius: 5px;
-  /* display: inline-block; */
   width: 100%;
+  text-transform: capitalize;
 }
 
 .form-btn a {
@@ -514,7 +534,7 @@ textarea::placeholder {
 }
 
 .get-started-paragraph {
-  line-height: 33px;
+  line-height: 32px;
 }
 
 .get-started-secondary {
@@ -524,6 +544,12 @@ textarea::placeholder {
 .get-started-secondary,
 .get-started-paragraph {
   font-family: "Montserrat", sans-serif;
+}
+
+.get-primary-secondary {
+  line-height: 60px;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 /*/ //////////////////////////////*/
@@ -537,7 +563,8 @@ textarea::placeholder {
 }
 
 .our-strength-secondary {
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .hero-card-1 {
@@ -549,7 +576,6 @@ textarea::placeholder {
 
 .hero-card-1 h4 {
   font-family: "Montserrat", sans-serif;
-  margin-top: 20px;
   font-weight: 800;
   font-size: 16px;
   color: #494949;
@@ -568,6 +594,10 @@ textarea::placeholder {
   color: #494949;
   font-weight: 800;
   font-size: 16px;
+}
+
+.hero-card-paragraph p {
+  line-height: 32px;
 }
 /*/ //////////////////////////////*/
 /*/ //////////////////////////////*/
@@ -595,6 +625,11 @@ footer {
   color: #a3c6d1;
 }
 
+.footer-contact img {
+  width: 228px;
+  margin-bottom: 30px;
+}
+
 .footer-social-media a,
 .footer-contact p a {
   color: #61b5e5;
@@ -603,6 +638,10 @@ footer {
 
 .footer-contact p {
   font-weight: 400;
+}
+
+.footer-social-media {
+  margin-top: 30px;
 }
 
 .footer-social-media a {
@@ -614,7 +653,11 @@ footer {
   padding-left: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 15px;
+  row-gap: 20px;
+}
+
+.footer-links li a {
+  text-transform: capitalize;
 }
 
 .footer-links li a,
@@ -670,7 +713,7 @@ footer {
 /*/ //////////////////////////////*/
 @media all and (max-width: 1320px) {
   .nav-img img {
-    height: 150px;
+    /* height: 150px; */
     width: 220px;
   }
 
@@ -707,7 +750,7 @@ footer {
 
 @media all and (max-width: 992px) {
   .nav-img img {
-    height: 100px;
+    /* height: 100px; */
     width: 170px;
   }
 
@@ -728,7 +771,7 @@ footer {
   }
 
   .nav-btn-2 {
-    margin-top: 40px;
+    margin-top: 20px;
     display: block;
   }
 
@@ -787,7 +830,7 @@ footer {
   }
 
   .nav-img img {
-    height: 153px;
+    /* height: 153px; */
     width: 227px;
   }
 
